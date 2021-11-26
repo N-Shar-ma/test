@@ -31,8 +31,8 @@ jobs:
       uses: flameddd/screenshots-ci-action@v1.1.1
       with:
         url: ${{ steps.wait-for-200.outputs.url }}
-        # noDesktop: true # false by default
-        fullPage: true # false by default
+        noDesktop: true # false by default
+        # fullPage: true # false by default
         devices: "iPhone 6,iPad Pro" # add / remove more devices as listed here: https://github.com/marketplace/actions/screenshots-ci-action#full-mobile-devices-options-httpsgithubcompuppeteerpuppeteerblobmasterexperimentalpuppeteer-firefoxlibdevicedescriptorsjs
     - name: Upload Screenshots to Imgur
       id: upload
